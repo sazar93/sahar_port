@@ -1,0 +1,22 @@
+name: Jira Exporter Workflow
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */1 * * *' 
+
+jobs:
+  run-integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: port-labs/ocean-sail@v1
+        with:
+          type: 'jira'
+          port_client_id: ${{ secrets.OwRWKL09UCkzMWiYrfIBnbnkBniYPYpd }}
+          port_client_secret: ${{ secrets.MIBgdJzktmdD41ZmquuvFvhzd95cu63wjxUkzwj0DDhdfCIH2IvgWNhPX3YVCtD2 }}
+          port_base_url: https://api.getport.io
+          config: |
+            jira_host: ${{ secrets.sahar4azar.atlassian.net }}
+            atlassian_user_email: ${{ secrets.sahar4azar@gmail.com }}
+            atlassian_user_token: ${{ secrets.ATATT3xFfGF0mU5qbeSy_aJquRiPe5-hq4XUsI1X4W5MzZRzVWF6kDoncTrcuOBoDdUkOZsz8U8aeN06WzVRIidNIVES4o4JqjUBL7Roh9t4yutuqPx0n4b1xQj2yAtYJrQr7RmIHlto_YSjo_NGaY96mbMpu8-O3_1rEi2GZUscyIXsxkPHh6U=092A64D8 }}
