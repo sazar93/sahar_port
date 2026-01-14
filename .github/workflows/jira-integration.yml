@@ -18,5 +18,5 @@ jobs:
           port_base_url: https://api.getport.io
           config: |
             jira_host: ${{ secrets.sahar4azar.atlassian.net }}
-            atlassian_user_email: ${{ secrets.sahar4azar@gmail.com }}
+            atlassian_user_email: ${{ secrets.OCEAN__INTEGRATION__CONFIG__ATLASSIAN_USER_EMAIL }}
             atlassian_user_token: ${{ secrets.ATATT3xFfGF0mU5qbeSy_aJquRiPe5-hq4XUsI1X4W5MzZRzVWF6kDoncTrcuOBoDdUkOZsz8U8aeN06WzVRIidNIVES4o4JqjUBL7Roh9t4yutuqPx0n4b1xQj2yAtYJrQr7RmIHlto_YSjo_NGaY96mbMpu8-O3_1rEi2GZUscyIXsxkPHh6U=092A64D8 }}
